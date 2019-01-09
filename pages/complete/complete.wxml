@@ -24,7 +24,7 @@
   <view class='endText' wx:if='{{success}}'>
     <view class='prize'>
       <view class='text-center'>恭喜你获得一张<text>188元代金券</text></view>
-      <image class='center-block' src='/images/188.jpg' mode='widthFix'></image>
+      <image class='center-block' src='/images/188.jpg'></image>
       <view class='btn' bindtap='tologistics'>{{status ? '立即使用' : '已使用'}}</view>
     </view>
     <!-- <view wx:if='{{state}}'>
@@ -43,8 +43,6 @@
     </view>
   </block>
   <view class='co_btn center-block'>
-    <view class='text-center s_text2' wx:if="{{flag5}}">分享到群获得更多挑战机会</view>
-    <view class='friend moreShare' wx:if="{{flag5}}"><button class='btn_share' open-type="share"> 获得更多挑战</button></view>
     <view class='friend moreChallenge' bindtap='tolose'>再来一次</view>
   </view>
   <view class='lose center-block' bindtap='tolose'>
@@ -56,8 +54,8 @@
     <view class='text-center'>本次兑换奖品</view>
     <view class='rgba_border'>
       <view class='form form1'>
-        <image src="{{toprize.prize_img}}"></image>
-        <view class='exchaneg_prize_name'>{{toprize.prize_name}}</view>
+        <image src="/images/188.jpg"></image>
+        <view class='exchaneg_prize_name'>久益康消毒液</view>
       </view>
     </view>
     <view class='text-center'>请填写您的兑换信息</view>

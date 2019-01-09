@@ -29,7 +29,7 @@
               <view class='info-txt'><text class='info_text1'>{{total}}</text>次</view>
               <view class='info-tit'>已挑战</view>
             </view>
-            <view class='info-block' bindtap='tosharePng'>
+            <view class='info-block' wx:if= "{{doll >0}}" bindtap='tosharePng'>
               <view class='info-txt'><text class='info_text1'>1</text>个</view>
               <view class='info-tit'>邀请码</view>
             </view>

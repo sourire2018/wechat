@@ -103,7 +103,7 @@ Page({
     // start: false,
     loadNum: 3,
     // 题库由谁
-    foot: "环保答人",
+    foot: "金领方舟",
     // 插入的问题
     ques: {
       id: 0,

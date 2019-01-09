@@ -7,7 +7,7 @@ Page({
     userInfo:{},
     hasUserInfo:false,
     token:'',
-    userName:'环保答人',
+    userName:'金领方舟',
     display:"../../images/display.png",
     Tel:'020-22096568',
     date: ''
