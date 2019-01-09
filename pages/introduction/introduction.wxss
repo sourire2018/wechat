@@ -1,0 +1,209 @@
+
+ /**index.wxss**/
+.container{
+  position: relative;
+  /* background: rgb(189, 215, 238); */
+  height: 100%;
+  /* overflow: hidden; */
+  font-size: 28rpx;
+  color: #333;
+}
+.container .logo{
+  height: 200rpx;
+  width: 100%;
+}
+.container .title {
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.container .content {
+  text-indent: 2em;
+  margin-top: 10rpx;
+}
+.product image {
+  margin-top: 20rpx;
+  width: 100%;
+  /* height: 300rpx; */
+}
+.person image {
+  width: 100%;
+  margin: 10rpx 0;
+}
+.glory {
+  width: 100%;
+  height: 400rpx;
+  margin-bottom: 20rpx;
+  overflow: hidden;
+  text-align: center;
+  color: rgb(190, 172, 95)
+}
+.glory .picture{
+  width: 33.333%;
+  float: left;
+}
+.glory .picture image {
+  width: 80%;
+  height: 200rpx;
+  text-align: center
+}
+.foot  image{
+  width: 100%;
+}
+.footer{
+  display: flex;
+  width: 100%;
+  height: 100rpx;
+  position: fixed;
+  bottom: 0;
+  background: #fff;
+  padding-top: 10rpx;
+  box-shadow: 0 0 30rpx rgba(0,0,0,.1);
+  /* left: 3%; */
+}
+.footer-nav{
+  display: block;
+  width: 25%;
+  text-align:center;
+  font-size: 0;
+  transform: scale(1);
+  transition: transform .5s;
+}
+.footer-nav.scale{
+  transform: scale(1.08)
+}
+.footer-nav image{
+  width: 50rpx;
+  height: 50rpx;
+}
+.footer-nav view{
+  font-size: 26rpx;
+  line-height: 40rpx;
+}
+
+
+.loading{
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: #7FA0FF;
+  opacity: 1;
+}
+ .loading.on{
+  opacity: 0;
+  transform: scale(0.001);
+  animation: runs .3s linear;
+}
+@keyframes runs{
+  0%{transform: scale(1);opacity: 1;}
+  99%{transform: scale(1);opacity: 0;}
+  100%{transform: scale(0.001);opacity: 0;}
+} 
+.loading .logo{
+  width: 500rpx;
+  margin-top: 200rpx;
+  margin-left: 100rpx;
+}
+.loading .zhy_logo{
+padding-bottom: 20rpx;
+}
+.loading .zhy_logo image{
+  width: 194rpx;
+  height: 80rpx;
+}
+
+.progressBar{
+  width: 500rpx;
+  position: absolute;
+  top: 660rpx;
+  left: 125rpx;
+  text-align: center;
+}
+.progressBar .percent{
+  color: #fff;
+  font-size: 44rpx;
+  margin-top: 40rpx;
+}
+.progressBar .tBar{
+  width: 496rpx;
+  height: 20rpx;
+  border-radius: 10rpx;
+  border:4rpx solid #fff;
+  margin-top: 10rpx;
+  overflow: hidden;
+}
+.progressBar .tBar view{
+  height: 100%;
+  float: left;
+  background: #fff;
+  /* transition: width .3s; */
+  border-radius: 10rpx;
+}
+
+.load-bottom{
+  width: 100%;
+  position: absolute;
+  bottom: 20rpx;
+  text-align: center;
+}
+.load-bottom .load-txt{
+  font-size: 22rpx;
+  color: #fff;
+  line-height: 40rpx;
+
+}
+
+/* 无挑战次数显示的弹框 */
+.dark_bg{
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.8);
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+.lingth_bg{
+  width: 600rpx;
+  margin:42% auto 0;
+  background: #7FA0FF;
+  text-align: center;
+  height: 42%;
+  border-radius: 10rpx;
+  position: relative;
+}
+.lingth_bg image{
+  width: 60rpx;
+  height: 106rpx;
+  position: absolute;
+  top:-106rpx;
+  right: 0;
+}
+.lingth_bg>button{
+  width:450rpx;
+  height:100rpx;
+  position: absolute;
+  left: 86rpx;
+  top:63%;
+  z-index: 2;
+  opacity: 0;
+}
+.lingth_bg .tit{
+  color: #fff;
+  font-size:46rpx;
+  /* padding: 17%; */
+  padding:17% 17% 13%;
+}
+.lingth_bg image.share_btn{
+  width: 450rpx;
+  height: 100rpx;
+  margin: 0 auto;
+  left: 22rpx;
+  top:63%
+}
+.auth button{
+   width:450rpx;
+   margin:80rpx auto 10rpx auto;
+   text-align: center;
+}

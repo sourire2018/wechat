@@ -1,0 +1,83 @@
+ <!--index.wxml-->
+<include src="../../overdue/overdue.wxml"/>
+<!-- <button class='sqbtn' wx:if="{{!hasUserInfo}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 加载中••• </button> -->
+<!-- <block wx:else> -->
+<view class="container"  wx:if="{{!loadct}}">
+    <image src='/images/logo.jpg' class='logo'></image>
+    <view>
+      <view class='title'>北京金领方舟实业股份有限公司</view>
+      <view class='content'>
+        北京金领方舟实业股份有限公司（以下简称“金领方舟”）是金舟集团响应国家号召脱虚向实、科技兴邦的重要一步。
+      </view>
+      <view class='content'>
+        金领方舟专注指导各类企业及家庭综合资产配置，用专业独到的能力助力于“中国制造”、“国产替代”、“实体民营”、“尖端科技”、“价值服务、创造型”的企业。携手数万家庭和企业打造中国制造骄傲，挺起民族工业脊梁。
+      </view>
+      <view class='product'>
+        <image src='/images/product.jpg'></image>
+      </view>
+      <view class='person'>
+        <image src='/images/people.png'></image>
+      </view>
+      <view class='glory'>
+        <view class='picture'>
+          <image src='/images/60.png'></image>
+          <view>
+            <view>金领方舟</view>
+            <view>推荐人资格</view>
+          </view>
+        </view>
+        <view class='picture'>
+          <image src='/images/10.png'></image>
+          <view>金领康健</view>
+          <view>服务推广权</view>
+        </view>
+        <view class='picture'>
+          <image src='/images/20.png'></image>
+          <view>金领方舟系类列</view>
+          <view>消毒液销售资格</view>
+        </view>
+      </view>
+      <view class='foot'>
+        <image src='/images/foot.png'></image>
+      </view>
+    </view>
+</view>
+<view class='footer'>
+  <navigator class='footer-nav' hover-class="scale" url='../prizeList/prizelist'>
+    <image src='/images/tar4_on.png'></image>
+    <view>奖品</view>
+  </navigator>
+  <navigator class='footer-nav' hover-class="scale" url='../ranking/ranking'>
+    <image src='/images/tar2_on.png'></image>
+    <view>排行榜</view>
+  </navigator>
+  <navigator class='footer-nav' hover-class="scale" url='../index/index'>
+    <image src='/images/tar1_on.png'></image>
+    <view>游戏</view>
+  </navigator>
+  <navigator class='footer-nav' hover-class="scale" url='../userCenter/userCenter'>
+    <image src='/images/tar3_on.png'></image>
+    <view>个人中心</view>
+  </navigator>
+</view>
+
+<view wx:if="{{loadct}}" class='loading {{!show?"on":""}}'>
+  <image class='logo' mode='widthFix' src='/images/db/index/logo.png'></image>
+  <view class='progressBar' style="display:{{auth==true?'block':'none'}}">
+    <view class='percent'>{{percent}}%</view>
+    <view class='tBar'><view style='width:{{percent}}%'></view></view>
+    
+  </view>
+  <view class='auth' style="display:{{auth==false?'block':'none'}}"><button wx:if="{{canIUse}}" open-type="getUserInfo" bindopensetting="reloadInit" bindgetuserinfo="reloadInit">授权登陆并继续</button>
+<view wx:else>请升级微信版本</view></view>
+  <view class='load-bottom'>
+    <view class='zhy_logo'>
+       <image src="/images/db/index/zhy_logo.png"></image> 
+    </view>
+    <view class='load-txt'>专注知识教育，营造竞赛氛围。精选知识考题，提升个人智力。</view>
+    <view class='load-txt'>严格把控题目，杜绝不良信息。分享好友挑战，共同学习进步。</view>
+    
+  </view>
+</view>
+
+

@@ -1,0 +1,73 @@
+ <!--index.wxml-->
+<include src="../../overdue/overdue.wxml"/>
+<!-- <button class='sqbtn' wx:if="{{!hasUserInfo}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 加载中••• </button> -->
+<!-- <block wx:else> -->
+<view class="container"  wx:if="{{!loadct}}">
+   <image src='{{thisImg ? thisImg : "/images/db/index/bg.png"}}' class='container_bg' mode='widthFix'></image>
+   <!-- <view class='top'>
+      <view>
+        金领方舟 久益康（金舟系列）消毒液介绍
+      </view>
+      <view>
+        有奖答题 红包连连
+      </view>
+    </view> -->
+    <view class='share_rule' >
+      <view class='title'>
+          金领方舟
+        </view>
+        <view class='title'>
+          久益康（金舟系列）消毒液介绍
+        </view>
+        <view class='title'>
+          有奖答题 红包连连
+        </view>
+      <view class='rule_btn' bindtap='toRule'>
+        学习一下
+      </view>
+    </view>
+    <view class='start'>
+      <image mode='widthFix'  bindtap='toStart' src='/images/db/index/start.gif'></image>
+    </view>
+    
+
+  <!-- 游戏规则 &times; -->
+  <view wx:if='{{rule}}' class='rule_box'>
+    <view class='ru_content'>
+      <image class='item_bg' src='/images/db/index/rule_bg.png' mode='widthFix'></image>
+      <view class='rule_text'>
+        <block wx:for='{{ruleText}}' wx:key="*this">
+          <scroll-view class='ru_text'><image class='rule_icon' src='/images/db/index/{{index+1}}.png' mode='widthFix'></image>
+            <view class='ru_text_content'>{{item}}</view>
+          </scroll-view>
+        </block>
+        <view class='rule_kf' bindtap='toStrategy'>
+          <image src='/images/db/index/kf.png' mode='widthFix'></image>
+          <button class='btn-kf' open-type="contact"></button>
+        </view> 
+      </view>
+      <view catchtap='closeRule' class='ru_false'></view>
+    </view>
+    <view class='ru_shadow' bindtap='closeRule'></view>
+  </view>
+</view> 
+<view class='footer'>
+  <navigator class='footer-nav' hover-class="scale" url='../introduction/introduction'>
+    <image src='/images/tar3_on.png'></image>
+    <view>首页</view>
+  </navigator>
+  <navigator class='footer-nav' hover-class="scale" url='../prizeList/prizelist'>
+    <image src='/images/tar4_on.png'></image>
+    <view>奖品</view>
+  </navigator>
+  <navigator class='footer-nav' hover-class="scale" url='../ranking/ranking'>
+    <image src='/images/tar2_on.png'></image>
+    <view>排行榜</view>
+  </navigator>
+  <navigator class='footer-nav' hover-class="scale" url='../userCenter/userCenter'>
+    <image src='/images/tar3_on.png'></image>
+    <view>个人中心</view>
+  </navigator>
+</view>
+
+
