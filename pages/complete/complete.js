@@ -42,7 +42,6 @@ Page({
   // 地址
   submit: function (e) {
     if (overdue_btn){
-      console.log(1111)
       var phone = e.detail.value.phone;
       var re = /^(13[0-9]|14[0-9]|15[0-9]|18[0-9])\d{8}$/;
       var retu = phone.match(re);

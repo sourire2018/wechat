@@ -200,7 +200,6 @@ Page({
   },
   // 转发
   onShareAppMessage: function (res) {
-    // console.log()
     // 判断是普通转发 还是 获得挑战机会
     var info = parseInt(res.target.dataset.info);
     // var id = app.globalData.pid;

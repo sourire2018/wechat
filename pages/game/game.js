@@ -484,9 +484,13 @@ Page({
         })
         setTimeout(function(){
           if (flag2 || flag6){
+            if (timer) {
+              clearInterval(timer);
+            }
             that.setData({
               qaModel: true
             })
+
           }
           else{
             that.setQaModel();
@@ -509,7 +513,7 @@ Page({
         if (qaYes == that.data.length) { // 全对
           isPlay = 0;
           wx.showToast({
-            title: '娃娃在来的路上',
+            title: '红包在来的路上',
             icon: 'success',
             mask: true,
             duration: 1500
@@ -544,6 +548,11 @@ Page({
     innerAudioContext.src = '/music/succeed.mp3'
     innerAudioContext.play();
     this.toflag(1);
+  },
+  study: function () {
+    wx.reLaunch({
+      url: '../index/index'
+    })
   },
   // 挑战失败
   setQaModel: function () {
@@ -809,7 +818,6 @@ Page({
     var that = this;
     // app.postLogin(postUrl, postData, function (res) {
     app.request(postUrl, postData, function (res) {
-      console.log(123,res)
       if (res.data.code == 20000) {
         let data = res.data.quests
         let qa = []

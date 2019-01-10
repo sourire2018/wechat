@@ -161,6 +161,7 @@
 }
 .kf2_box {
   position: relative;
+  top: 400rpx;
   width: 643rpx;
   height: 102rpx;
   margin: 18rpx auto;

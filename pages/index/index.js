@@ -192,15 +192,15 @@ Page({
     wx.showShareMenu({
       withShareTicket: true
     })
-      // title = this.data.userInfo.nickName + ' ' + this.data.relay;
+
     if (res.from === 'button') {
       // 来自页面内转发按钮
       // console.log(res.target)
     }
     return {
-      title: app.globalData.title,
+      title: '金领方舟 有奖答题 红包连连',
       path: '/pages/index/index',
-      imageUrl: '/images/share.png',
+      imageUrl: '/images/db/index/logo.png',
       success: function (res) {
         // console.log(res.shareTickets)
 

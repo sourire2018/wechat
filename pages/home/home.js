@@ -39,7 +39,7 @@ Page({
     var tims = new Date().getTime();
     if (tims > aa) {
       wx.reLaunch({
-        url: '../introduction/introduction'
+        url: '../index/index'
       })
       if (timehome) { clearTimeout(timehome); }
       return false

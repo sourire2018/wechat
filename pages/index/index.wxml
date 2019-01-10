@@ -4,14 +4,6 @@
 <!-- <block wx:else> -->
 <view class="container"  wx:if="{{!loadct}}">
    <image src='{{thisImg ? thisImg : "/images/db/index/bg.png"}}' class='container_bg' mode='widthFix'></image>
-   <!-- <view class='top'>
-      <view>
-        金领方舟 久益康（金舟系列）消毒液介绍
-      </view>
-      <view>
-        有奖答题 红包连连
-      </view>
-    </view> -->
     <view class='share_rule' >
       <view class='title'>
           金领方舟
@@ -20,7 +12,10 @@
           久益康（金舟系列）消毒液介绍
         </view>
         <view class='title'>
-          有奖答题 红包连连
+          有奖答题
+        </view>
+        <view class='title'>
+          红包连连
         </view>
       <view class='rule_btn' bindtap='toRule'>
         学习一下
@@ -29,7 +24,14 @@
     <view class='start'>
       <image mode='widthFix'  bindtap='toStart' src='/images/db/index/start.gif'></image>
     </view>
-    
+    <image src='/images/db/index/title.png' mode='widthFix' class='prize_title'></image>
+    <view class='kf2_box'>
+      <image class='item_bg' src='/images/db/index/kf2.png' mode='widthFix'></image>
+      <view class='kf2_text'>如有其他疑问，请联系客服</view>
+      <view class='kf2' bindtap='toStrategy'>
+        <button class='btn-kf' open-type="contact"></button>
+      </view> 
+    </view>
 
   <!-- 游戏规则 &times; -->
   <view wx:if='{{rule}}' class='rule_box'>

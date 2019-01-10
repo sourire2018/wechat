@@ -225,7 +225,6 @@ Page({
       };
     // app.postLogin(postUrl, postData, function (res) {
     app.request(postUrl, postData, function (res) {
-    // console.log(111)
       wx.hideLoading()
       if (res.data.code == 20000) {
         var list = page1 == 1 ? [] : that.data.prizeList;

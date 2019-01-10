@@ -105,14 +105,14 @@
       <image class='item_bg' src='/images/db/game/false.png' mode='widthFix'></image>
       <view class='rule_con'>
         <view class='ru_title'>答错了呦 ! _ !</view>
-        <view class='ru_text text-center' wx:if="{{now < nowfrequency}}">您可以选择以下复活方式继续答题</view>
+        <view class='ru_text text-center' wx:if="{{now < nowfrequency}}">您可以学习一下再继续答题</view>
         <view class='ru_text text-center' wx:if="{{now >= nowfrequency && flag2}}">购买复活卡</view>
         <view class='ru_text text-center' wx:if="{{now >= nowfrequency && flag2}}">即可<text>马上复活并继续答题</text></view>
         <view class='ru_start text-center' style='margin-top: {{flag2 ? 18 : 60}}rpx' wx:if="{{now < nowfrequency && flag6}}">
-          <button class='btn_share' open-type="share">分享到群立即复活</button>
+          <button class='btn_share' catchtap='study'>学习一下</button>
         </view>
         <view class='ru_start text-center'>
-          <button class='btn_share' open-type="contact">联系客服获取更多答题次数</button>
+          <button class='btn_share' catchtap='setQaModel'>跳过</button>
         </view>
          <view class='ru_start text-center {{gray_btn? "gray":""}}' style='margin-top: {{flag6 ? 18 : 60}}rpx' bindtap='buyLife' wx:if="{{flag2}}">
           {{life ? '使用复活卡立即复活' : fhmoney_txt}}

@@ -10,7 +10,7 @@
               <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover" mode='widthFix'></image>
               <view class='userinfo_text'>
                 <view class='userinfo_text2'>{{userInfo.nickName}}</view>
-                <view class='userinfo_text2'>共获得{{doll || 0}}个娃娃</view>
+                <view class='userinfo_text2'>共获得{{doll || 0}}张现金券</view>
               </view>
             </view>
             <view class='fr' bindtap='toPrize'>查看奖品 ></view>

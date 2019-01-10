@@ -107,7 +107,7 @@ Page({
       // console.log(res.target)
     }
     return {
-      title: '群内智力大比拼啦, 来测下你的智力吧!',
+      title: '金领方舟 有奖答题 红包连连',
       path: '/pages/group/group?group=1',
       imageUrl: '/images/share.png',
       success: function (res) {

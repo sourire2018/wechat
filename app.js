@@ -23,7 +23,7 @@ App({
     excAmount: null,  //可兑换的挑战次数
     revive_money: null,  //复活卡金额
     toAdvs: true,
-    title: '究竟谁是答题王, 等你来挑战! !',
+    title: '金领方舟 有奖答题 红包连连',
     iv:'',
     encryptedData:'',
     thisImg: "/images/wd/bg.png"
