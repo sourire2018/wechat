@@ -550,6 +550,9 @@ Page({
     this.toflag(1);
   },
   study: function () {
+    if (delay) {
+      clearTimeout(delay);
+    }
     wx.reLaunch({
       url: '../index/index'
     })

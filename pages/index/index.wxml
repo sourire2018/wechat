@@ -27,7 +27,7 @@
     <image src='/images/db/index/title.png' mode='widthFix' class='prize_title'></image>
     <view class='kf2_box'>
       <image class='item_bg' src='/images/db/index/kf2.png' mode='widthFix'></image>
-      <view class='kf2_text'>如有其他疑问，请联系客服</view>
+      <view class='kf2_text'>如有问题，请联系客服</view>
       <view class='kf2' bindtap='toStrategy'>
         <button class='btn-kf' open-type="contact"></button>
       </view> 

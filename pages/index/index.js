@@ -132,8 +132,11 @@ Page({
 
   //弹出游戏规则
   toRule: function () {
-    this.setData({
-      rule: true
+    // this.setData({
+    //   rule: true
+    // })
+    wx.reLaunch({
+      url: '../introduction/introduction'
     })
   },
   //关闭

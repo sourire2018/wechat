@@ -10,7 +10,7 @@
               <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover" mode='widthFix'></image>
               <view class='userinfo_text'>
                 <view class='userinfo_text2'>{{userInfo.nickName}}</view>
-                <view class='userinfo_text2'>共获得{{doll || 0}}张现金券</view>
+                <view class='userinfo_text2'>共获得{{doll || 0}}张代金券</view>
               </view>
             </view>
             <view class='fr' bindtap='toPrize'>查看奖品 ></view>
@@ -86,7 +86,7 @@
           </scroll-view>
         </view>
         <view class='moreGame_box_non' wx:if="{{moreGame.length<=0}}">
-          <image src='/images/db/prize/none_data_img.png'></image>
+          <image src='/images/db/prize/foot.png'></image>
         </view>
       </block>
       <text class='moreGame_box_non_txt'  wx:if="{{moreGame.length<=0}}">{{jszc}}</text>

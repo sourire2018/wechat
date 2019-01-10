@@ -49,6 +49,8 @@
 }
 .foot  image{
   width: 100%;
+  height: 200rpx;
+  margin-bottom: 100rpx;
 }
 .footer{
   display: flex;

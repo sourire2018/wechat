@@ -45,7 +45,40 @@ Page({
   clearpop: function () {
     clearTimeout(dsqload)
   },
+  onShareAppMessage: function (res) {
+    // var id = app.globalData.pid;
+    var that = this;
+    wx.showShareMenu({
+      withShareTicket: true
+    })
 
+    if (res.from === 'button') {
+      // 来自页面内转发按钮
+      // console.log(res.target)
+    }
+    return {
+      title: '金领方舟 有奖答题 红包连连',
+      path: '/pages/introduction/introduction',
+      imageUrl: '/images/db/index/logo.png',
+      success: function (res) {
+        wx.showToast({
+          title: '转发成功',
+          icon: 'success',
+          mask: true,
+          duration: 1000
+        })
+      },
+      fail: function (res) {
+        // 转发失败
+        wx.showToast({
+          title: '转发失败',
+          icon: 'loading',
+          mask: true,
+          duration: 1000
+        })
+      }
+    }
+  },
   // 请求超时
   overdue_btn: function () {
     this.toload(0);

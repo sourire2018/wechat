@@ -15,9 +15,9 @@
         <view>
           <block wx:for='{{prize}}'wx:key='*this'>
             <view class='prize_box'>
-              <image class='item_bg' src='/images/db/index/prize_box.png' mode='widthFix'></image>
-              <image mode='widthFix' class='item_con' src='{{item.prize_img}}'></image>
-              <text class='prize_text'>{{item.prize_name}}</text>
+              <!-- <image class='item_bg' src='/images/db/index/prize_box.png'></image> -->
+              <image  class='item_con' src='{{item.prize_img}}'></image>
+              <!-- <text class='prize_text'>{{item.prize_name}}</text> -->
             </view>
           </block>
         </view>
